@@ -1,0 +1,97 @@
+h1,h2,h3,h4,h5,h6, ul, li, p{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  user-select: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+#main-container {
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  background-color: #cacaca;
+  border-radius: 5px;
+  position: relative;
+  border-top-right-radius: 0;
+  border: 2px solid #5fcec6;
+}
+
+#list-of-items {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  list-style-type: none;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+#cart-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 10px;
+  position: absolute;
+  background-color: #cacaca;
+  border: 2px solid #5fcec6;
+  border-left: 0;
+  box-sizing: border-box;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  top: -2px;
+  left: 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.35s;
+  padding: 5px;
+}
+
+#cart-btn.active{
+  transition: 0.5s;
+  width: 350px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #5fcec6;
+}
+
+
+.cart-btn-counter-badge{
+  position: absolute;
+  padding:4px;
+  background-color: red;
+  color:#f3f3f3;
+  border-radius: 5px;
+  bottom:1px;
+  right: 1px;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #5fcec6 #dedede;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #dedede;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #5fcec6;
+  border-radius: 10px;
+  border: 3px none #9ac8d0;
+}
